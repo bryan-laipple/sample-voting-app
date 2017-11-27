@@ -1,0 +1,47 @@
+{
+  "env": {
+    "doc": "The applicaton environment",
+    "format": ["production", "development", "test"],
+    "default": "development",
+    "env": "NODE_ENV"
+  },
+  "httpPort": {
+    "doc": "Port listening for HTTP",
+    "format": "port",
+    "default": 4000,
+    "arg": "httpPort"
+  },
+  "mongo": {
+    "host": {
+      "doc": "MongoDB hostname",
+      "format": "String",
+      "default": "localhost",
+      "env": "MONGO_HOST"
+    },
+    "port": {
+      "doc": "MongoDB port",
+      "format": "port",
+      "default": "27017",
+      "env": "MONGO_PORT"
+    },
+    "db": {
+      "doc": "MongoDB database name",
+      "format": "String",
+      "default": "",
+      "env": "MONGO_DB"
+    },
+    "user": {
+      "doc": "MongoDB username",
+      "format": "String",
+      "default": "",
+      "env": "MONGO_USER"
+    },
+    "pass": {
+      "doc": "MongoDB password",
+      "format": "String",
+      "sensitive": true,
+      "default": "",
+      "env": "MONGO_PASS"
+    }
+  }
+}
