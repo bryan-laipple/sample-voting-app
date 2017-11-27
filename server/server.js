@@ -6,6 +6,7 @@ const mount = require('koa-mount');
 const graphqlHTTP = require('koa-graphql');
 const koaWebpack = require('koa-webpack');
 
+const { env } = require('./config')
 const schema = require('./schema/schema');
 const webpackConfig = require('../webpack.config.js');
 
@@ -17,7 +18,7 @@ app.use(body({
 }));
 app.use(mount('/graphql', graphqlHTTP({
   schema,
-  graphiql: true
+  graphiql: env === 'development'
 })));
 app.use(koaWebpack({
   config: webpackConfig

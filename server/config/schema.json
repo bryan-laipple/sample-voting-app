@@ -8,8 +8,9 @@
   "httpPort": {
     "doc": "Port listening for HTTP",
     "format": "port",
-    "default": 4000,
-    "arg": "httpPort"
+    "default": 3000,
+    "arg": "httpPort",
+    "env": "HTTP_PORT"
   },
   "mongo": {
     "host": {

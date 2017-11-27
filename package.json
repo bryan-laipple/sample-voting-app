@@ -7,10 +7,16 @@
     "type": "git",
     "url": "git+https://github.com/bryan-laipple/sample-voting-app.git"
   },
-  "scripts": {
-    "dev": "nodemon index.js --ignore client"
+  "bugs": {
+    "url": "https://github.com/bryan-laipple/sample-voting-app/issues"
   },
-  "author": "",
+  "homepage": "https://github.com/bryan-laipple/sample-voting-app#readme",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "nodemon index.js --ignore client",
+    "start:prod": "node index.js"
+  },
+  "author": "Bryan Laipple",
   "license": "ISC",
   "dependencies": {
     "apollo-cache-inmemory": "^1.1.1",
