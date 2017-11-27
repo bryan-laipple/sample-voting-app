@@ -1,12 +1,23 @@
 # Voting App
 
-This is a sample full-stack web application written in Node, Koa, Mongo, GraphQL and React.
+This is a sample full-stack web application written in Node, Koa, Mongo, GraphQL and React. It features examples of:
+- Server
+  - **[Koa](http://koajs.com/)** web framework
+  - Configuration with **[convict](https://github.com/mozilla/node-convict)** and **[dotenv](https://github.com/motdotla/dotenv)**
+  - GraphQL server by **[koa-graphql](https://github.com/chentsulin/koa-graphql)**
+  - MongoDB data modeling with **[mongoose](http://mongoosejs.com/)** 
+- Client
+  - Navigation with **[react-router](https://github.com/ReactTraining/react-router)**
+  - GraphQL client by **[apollo-client](https://www.apollographql.com/docs/react/)**
+  - Material design with **[materialize](http://next.materializecss.com/getting-started.html)**
 
-### Setup and run locally
+### Setup and running locally
 
-This app requires a [MongoDB](https://www.mongodb.com/) instance.  This can be a local installation,
+Koa requires _**node v7.6.0 or higher**_ for ES2015 and async function support.
+
+The server side part of the app requires a [MongoDB](https://www.mongodb.com/) instance running.  This can be a local installation,
 a running [Docker container](https://hub.docker.com/_/mongo/),
-or hosting service (e.g. [mLab](https://mlab.com/)).
+or one hosted by a service (e.g. [mLab](https://mlab.com/)).
 
 The following environment variables can be used to configure the Node/Koa server to connect to MongoDB:
 - **MONGO_HOST** - hostname (defaults to `localhost`)
